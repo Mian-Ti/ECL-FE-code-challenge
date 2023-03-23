@@ -1,0 +1,129 @@
+.error {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    font-family: Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    background-color: rgb(22, 11, 11);
+    display: flex;
+    padding: 6px 16px;
+    color: rgb(244, 199, 199);
+}
+
+.success {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    background-color: rgb(12, 19, 13);
+    display: flex;
+    padding: 6px 16px;
+    color: rgb(204, 232, 205);
+}
+
+.warning {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    background-color: rgb(25, 18, 7);
+    display: flex;
+    padding: 6px 16px;
+    color: rgb(255, 226, 183);
+}
+
+.info {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    background-color: rgb(7, 19, 24);
+    display: flex;
+    padding: 6px 16px;
+    color: rgb(184, 231, 251);
+}
+
+.alert-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.alert-icon-box {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.alert-text-box {
+    flex-grow: 1;
+}
+
+.alert-text {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1;
+    font-weight: 500;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+
+    25% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.snackbar {
+    display: block;
+    padding: 8px 16px;
+    z-index: 1000;
+}
+
+.hide {
+    animation: fadeout 1s linear normal;
+    opacity: 0;
+}

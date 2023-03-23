@@ -1,0 +1,9 @@
+  .snackbar_container {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 16px;
+  }
